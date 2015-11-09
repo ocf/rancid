@@ -1,0 +1,372 @@
+!RANCID-CONTENT-TYPE: cisco
+!
+!Chassis type: WS-C2960S-48TS-L - a 2900XL switch
+!CPU: PowerPC
+!
+!Memory: main 131072K
+!Serial Number: FOC1733V3VC
+!Model revision number           : J0
+!Model number                    : WS-C2960S-48TS-L
+!Motherboard assembly number     : 73-11909-09
+!Motherboard serial number       : FOC17335114
+!Motherboard revision number     : A0
+!Power supply part number        : 341-0327-04
+!Power supply serial number      : LIT17250UXC
+!
+!Processor ID: FOC1733V3VC
+!
+!
+!Image: Software: C2960S-UNIVERSALK9-M, 15.2(1)E1, RELEASE SOFTWARE (fc2)
+!Image: Compiled: Fri 22-Nov-13 07:10 by prod_rel_team
+!Image: flash:/c2960s-universalk9-mz.152-1.E1/c2960s-universalk9-mz.152-1.E1.bin
+!
+!BOOTLDR: Version 12.2(55r)SE, RELEASE SOFTWARE (fc1)
+!
+!
+!Variable: BOOT path-list      : flash:/c2960s-universalk9-mz.152-1.E1/c2960s-universalk9-mz.152-1.E1.bin
+!Variable: Config file         : flash:/config.text
+!Variable: Private Config file : flash:/private-config.text
+!Variable: Enable Break        : no
+!Variable: Manual Boot         : no
+!Variable: Allow Dev Key         : yes
+!Variable: HELPER path-list    : 
+!Variable: Auto upgrade        : yes
+!Variable: Auto upgrade path   : 
+!Variable: NVRAM/Config file
+!Variable:       buffer size:   524288
+!Variable: Timeout for Config
+!Variable:           Download:    0 seconds
+!Variable: Config Download 
+!Variable:        via DHCP:       disabled (next boot: disabled)
+!
+!Flash: Directory of flash:/
+!Flash:   647  -rwx        3822  Mar 29 2011 19:43:42 -07:00  config.text
+!Flash:     5  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
+!Flash:   646  -rwx        1910  Mar 29 2011 19:43:42 -07:00  private-config.text
+!Flash: 57931776 bytes total (36144128 bytes free)
+!
+!Flash: nvram: Directory of nvram:/
+!Flash: nvram:   505  -rw-        3822                    <no date>  startup-config
+!Flash: nvram:   506  ----        1910                    <no date>  private-config
+!Flash: nvram:     1  ----          51                    <no date>  persistent-data
+!Flash: nvram:     2  -rw-           0                    <no date>  ifIndex-table
+!Flash: nvram:     3  -rw-         599                    <no date>  F3D5A000host#2E2E.cer
+!Flash: nvram:     4  -rw-         599                    <no date>  F3D5A000host#1.cer
+!Flash: nvram: 524288 bytes total (514408 bytes free)
+!
+!
+!NAME: "C29xx Stacking",        DESCR: "Catalyst C29xx Switch Stack"
+!NAME: "1",                     DESCR: "WS-C2960S-48TS-L"
+!PID: WS-C2960S-48TS-L
+!VID: V06
+!SN: FOC1733V3VC
+!NAME: "Switch 1 - Fan Container", DESCR: "Fan Container"
+!NAME: "Switch 1 - Power Supply Container", DESCR: "Power Supply Container"
+!NAME: "Switch 1 - RPS Container", DESCR: "RPS Container"
+!NAME: "Switch 1 - WS-C2960S-48TS-L - Power Supply 0", DESCR: "Switch 1 - WS-C2960S-48TS-L - Power Supply 0"
+!SN: LIT17250UXC
+!NAME: "Switch 1 - WS-C2960S-48TS-L - Fan 0", DESCR: "Switch 1 - WS-C2960S-48TS-L - Fan 0"
+!NAME: "Switch 1 - WS-C2960S-48TS-L - Sensor 0", DESCR: "Switch 1 - WS-C2960S-48TS-L - Sensor 0"
+!NAME: "Switch 1 - WS-C2960S-48TS-L - Fixed Module 0", DESCR: "Switch 1 - WS-C2960S-48TS-L - Fixed Module 0"
+!NAME: "GigabitEthernet1/0/49 Container", DESCR: "GigabitEthernet Container"
+!NAME: "GigabitEthernet1/0/50 Container", DESCR: "GigabitEthernet Container"
+!NAME: "GigabitEthernet1/0/51 Container", DESCR: "GigabitEthernet Container"
+!NAME: "GigabitEthernet1/0/52 Container", DESCR: "GigabitEthernet Container"
+!NAME: "StackPort1",            DESCR: "StackPort1"
+!NAME: "GigabitEthernet1/0/1",  DESCR: "GigabitEthernet1/0/1"
+!NAME: "GigabitEthernet1/0/2",  DESCR: "GigabitEthernet1/0/2"
+!NAME: "GigabitEthernet1/0/3",  DESCR: "GigabitEthernet1/0/3"
+!NAME: "GigabitEthernet1/0/4",  DESCR: "GigabitEthernet1/0/4"
+!NAME: "GigabitEthernet1/0/5",  DESCR: "GigabitEthernet1/0/5"
+!NAME: "GigabitEthernet1/0/6",  DESCR: "GigabitEthernet1/0/6"
+!NAME: "GigabitEthernet1/0/7",  DESCR: "GigabitEthernet1/0/7"
+!NAME: "GigabitEthernet1/0/8",  DESCR: "GigabitEthernet1/0/8"
+!NAME: "GigabitEthernet1/0/9",  DESCR: "GigabitEthernet1/0/9"
+!NAME: "GigabitEthernet1/0/10", DESCR: "GigabitEthernet1/0/10"
+!NAME: "GigabitEthernet1/0/11", DESCR: "GigabitEthernet1/0/11"
+!NAME: "GigabitEthernet1/0/12", DESCR: "GigabitEthernet1/0/12"
+!NAME: "GigabitEthernet1/0/13", DESCR: "GigabitEthernet1/0/13"
+!NAME: "GigabitEthernet1/0/14", DESCR: "GigabitEthernet1/0/14"
+!NAME: "GigabitEthernet1/0/15", DESCR: "GigabitEthernet1/0/15"
+!NAME: "GigabitEthernet1/0/16", DESCR: "GigabitEthernet1/0/16"
+!NAME: "GigabitEthernet1/0/17", DESCR: "GigabitEthernet1/0/17"
+!NAME: "GigabitEthernet1/0/18", DESCR: "GigabitEthernet1/0/18"
+!NAME: "GigabitEthernet1/0/19", DESCR: "GigabitEthernet1/0/19"
+!NAME: "GigabitEthernet1/0/20", DESCR: "GigabitEthernet1/0/20"
+!NAME: "GigabitEthernet1/0/21", DESCR: "GigabitEthernet1/0/21"
+!NAME: "GigabitEthernet1/0/22", DESCR: "GigabitEthernet1/0/22"
+!NAME: "GigabitEthernet1/0/23", DESCR: "GigabitEthernet1/0/23"
+!NAME: "GigabitEthernet1/0/24", DESCR: "GigabitEthernet1/0/24"
+!NAME: "GigabitEthernet1/0/25", DESCR: "GigabitEthernet1/0/25"
+!NAME: "GigabitEthernet1/0/26", DESCR: "GigabitEthernet1/0/26"
+!NAME: "GigabitEthernet1/0/27", DESCR: "GigabitEthernet1/0/27"
+!NAME: "GigabitEthernet1/0/28", DESCR: "GigabitEthernet1/0/28"
+!NAME: "GigabitEthernet1/0/29", DESCR: "GigabitEthernet1/0/29"
+!NAME: "GigabitEthernet1/0/30", DESCR: "GigabitEthernet1/0/30"
+!NAME: "GigabitEthernet1/0/31", DESCR: "GigabitEthernet1/0/31"
+!NAME: "GigabitEthernet1/0/32", DESCR: "GigabitEthernet1/0/32"
+!NAME: "GigabitEthernet1/0/33", DESCR: "GigabitEthernet1/0/33"
+!NAME: "GigabitEthernet1/0/34", DESCR: "GigabitEthernet1/0/34"
+!NAME: "GigabitEthernet1/0/35", DESCR: "GigabitEthernet1/0/35"
+!NAME: "GigabitEthernet1/0/36", DESCR: "GigabitEthernet1/0/36"
+!NAME: "GigabitEthernet1/0/37", DESCR: "GigabitEthernet1/0/37"
+!NAME: "GigabitEthernet1/0/38", DESCR: "GigabitEthernet1/0/38"
+!NAME: "GigabitEthernet1/0/39", DESCR: "GigabitEthernet1/0/39"
+!NAME: "GigabitEthernet1/0/40", DESCR: "GigabitEthernet1/0/40"
+!NAME: "GigabitEthernet1/0/41", DESCR: "GigabitEthernet1/0/41"
+!NAME: "GigabitEthernet1/0/42", DESCR: "GigabitEthernet1/0/42"
+!NAME: "GigabitEthernet1/0/43", DESCR: "GigabitEthernet1/0/43"
+!NAME: "GigabitEthernet1/0/44", DESCR: "GigabitEthernet1/0/44"
+!NAME: "GigabitEthernet1/0/45", DESCR: "GigabitEthernet1/0/45"
+!NAME: "GigabitEthernet1/0/46", DESCR: "GigabitEthernet1/0/46"
+!NAME: "GigabitEthernet1/0/47", DESCR: "GigabitEthernet1/0/47"
+!NAME: "GigabitEthernet1/0/48", DESCR: "GigabitEthernet1/0/48"
+!NAME: "Switch 1 - FastEthernet0", DESCR: "FastEthernet0"
+!
+!VTP: VTP Version capable             : 1 to 3
+!VTP: VTP version running             : 1
+!VTP: VTP Domain Name                 : 
+!VTP: VTP Pruning Mode                : Disabled
+!VTP: VTP Traps Generation            : Disabled
+!VTP: Device ID                       : e8ed.f3d5.a000
+!VTP: Feature VLAN:
+!VTP: --------------
+!VTP: VTP Operating Mode                : Transparent
+!VTP: Maximum VLANs supported locally   : 255
+!VTP: Number of existing VLANs          : 5
+!VTP: Configuration Revision            : 0
+!VTP: MD5 digest                        : 0xF9 0x61 0xF7 0x3D 0x65 0x25 0xB6 0x70 
+!VTP:                                     0x45 0x90 0xA5 0xF5 0xC2 0xFC 0x0B 0xEE 
+!
+!VLAN: VLAN Name                             Status    Ports
+!VLAN: ---- -------------------------------- --------- -------------------------------
+!VLAN: 1    default                          active    Gi1/0/1, Gi1/0/2, Gi1/0/3, Gi1/0/4, Gi1/0/5, Gi1/0/6, Gi1/0/7, Gi1/0/8, Gi1/0/9
+!VLAN:                                                 Gi1/0/10, Gi1/0/11, Gi1/0/12, Gi1/0/13, Gi1/0/14, Gi1/0/15, Gi1/0/16, Gi1/0/17
+!VLAN:                                                 Gi1/0/18, Gi1/0/19, Gi1/0/20, Gi1/0/21, Gi1/0/22, Gi1/0/23, Gi1/0/24, Gi1/0/25
+!VLAN:                                                 Gi1/0/26, Gi1/0/27, Gi1/0/28, Gi1/0/29, Gi1/0/30, Gi1/0/31, Gi1/0/32, Gi1/0/33
+!VLAN:                                                 Gi1/0/34, Gi1/0/35, Gi1/0/36, Gi1/0/37, Gi1/0/38, Gi1/0/39, Gi1/0/40, Gi1/0/41
+!VLAN:                                                 Gi1/0/42, Gi1/0/43, Gi1/0/44, Gi1/0/45, Gi1/0/46, Gi1/0/47, Gi1/0/48, Gi1/0/49
+!VLAN:                                                 Gi1/0/50, Gi1/0/51, Gi1/0/52
+!VLAN: 1002 fddi-default                     act/unsup 
+!VLAN: 1003 token-ring-default               act/unsup 
+!VLAN: 1004 fddinet-default                  act/unsup 
+!VLAN: 1005 trnet-default                    act/unsup 
+!VLAN: VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+!VLAN: ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+!VLAN: 1    enet  100001     1500  -      -      -        -    -        0      0   
+!VLAN: 1002 fddi  101002     1500  -      -      -        -    -        0      0   
+!VLAN: 1003 tr    101003     1500  -      -      -        -    -        0      0   
+!VLAN: 1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+!VLAN: 1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+!VLAN: Remote SPAN VLANs
+!VLAN: ------------------------------------------------------------------------------
+!VLAN: Primary Secondary Type              Ports
+!VLAN: ------- --------- ----------------- ------------------------------------------
+!
+!
+config-register 0xF
+!
+version 15.2
+no service pad
+no service timestamps debug uptime
+no service timestamps log uptime
+service password-encryption
+!
+hostname blackhole
+!
+boot-start-marker
+boot-end-marker
+!
+logging console warnings
+enable secret 5 $1$pOeX$2j7BsXikXclZ3mBOMt34V1
+!
+username admin privilege 15 secret 5 $1$A3n0$z.QqCDACHIenac/RDYp881
+aaa new-model
+!
+aaa authentication login default local
+aaa accounting send stop-record authentication failure
+!
+aaa session-id common
+clock timezone UTC -8 0
+clock summer-time UTC recurring
+switch 1 provision ws-c2960s-48ts-l
+!
+ip domain-name ocf.berkeley.edu
+ip name-server 128.32.206.12
+ip name-server 128.32.136.9
+ip device tracking
+vtp mode transparent
+!
+crypto pki trustpoint HTTPS_SS_CERT_KEYPAIR
+ enrollment selfsigned
+ serial-number
+ revocation-check none
+ rsakeypair HTTPS_SS_CERT_KEYPAIR
+!
+crypto pki certificate chain HTTPS_SS_CERT_KEYPAIR
+ certificate self-signed 01
+  30820253 308201BC A0030201 02020101 300D0609 2A864886 F70D0101 04050030 
+  3B311030 0E060355 04031307 53776974 63682E31 27300F06 03550405 13084633 
+  44354130 30303014 06092A86 4886F70D 01090216 07537769 7463682E 301E170D 
+  31343033 30393035 35373030 5A170D32 30303130 31303030 3030305A 303B3110 
+  300E0603 55040313 07537769 7463682E 3127300F 06035504 05130846 33443541 
+  30303030 1406092A 864886F7 0D010902 16075377 69746368 2E30819F 300D0609 
+  2A864886 F70D0101 01050003 818D0030 81890281 8100B14B B77756E9 E76EC572 
+  62E9F0AB FF5FD044 470341C9 C21DEAF0 6B3787CE 29DD98C8 0398661B 71357BCF 
+  0D7D8CE7 F1D155DD C092D1DC C5EECAF2 2D153A8B 5EF79A18 C1972302 337C9173 
+  5BAC3771 751BC218 079E2001 E9390B57 1478A52F 7F5E5FDA F487C901 F3925AF0 
+  C6F53821 7BBEB389 144BDA83 28BC3494 657303A3 68250203 010001A3 67306530 
+  0F060355 1D130101 FF040530 030101FF 30120603 551D1104 0B300982 07537769 
+  7463682E 301F0603 551D2304 18301680 1454B2FC 558BB6A4 32739691 DDDB4330 
+  7AF4A622 68301D06 03551D0E 04160414 54B2FC55 8BB6A432 739691DD DB43307A 
+  F4A62268 300D0609 2A864886 F70D0101 04050003 8181003A 12EA45B0 FA026532 
+  A5FA2545 948A091D 18678C51 941E845D F52412E0 19E13912 B6A0946E F663B0FA 
+  9061E44D 818DD86C 2B15D7D7 0AB78431 9D3EDF79 AF1D5D21 E4B4CBDC 66558223 
+  FD945F58 9F8C06AC 85483689 205BCDA5 A49C5CA9 79B27B08 990CAA56 EDF5D319 
+  8887C28E 74485158 B88D1CD9 63DD4521 DA102603 FFC13B
+  	quit
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+no spanning-tree vlan 1-4094
+!
+vlan internal allocation policy ascending
+!
+ip ssh logging events
+ip ssh version 2
+!
+interface FastEthernet0
+ ip address 10.0.0.1 255.255.255.0
+!
+interface GigabitEthernet1/0/1
+!
+interface GigabitEthernet1/0/2
+!
+interface GigabitEthernet1/0/3
+!
+interface GigabitEthernet1/0/4
+!
+interface GigabitEthernet1/0/5
+!
+interface GigabitEthernet1/0/6
+!
+interface GigabitEthernet1/0/7
+!
+interface GigabitEthernet1/0/8
+!
+interface GigabitEthernet1/0/9
+!
+interface GigabitEthernet1/0/10
+!
+interface GigabitEthernet1/0/11
+!
+interface GigabitEthernet1/0/12
+!
+interface GigabitEthernet1/0/13
+!
+interface GigabitEthernet1/0/14
+!
+interface GigabitEthernet1/0/15
+!
+interface GigabitEthernet1/0/16
+!
+interface GigabitEthernet1/0/17
+!
+interface GigabitEthernet1/0/18
+!
+interface GigabitEthernet1/0/19
+!
+interface GigabitEthernet1/0/20
+!
+interface GigabitEthernet1/0/21
+!
+interface GigabitEthernet1/0/22
+!
+interface GigabitEthernet1/0/23
+!
+interface GigabitEthernet1/0/24
+!
+interface GigabitEthernet1/0/25
+!
+interface GigabitEthernet1/0/26
+!
+interface GigabitEthernet1/0/27
+!
+interface GigabitEthernet1/0/28
+!
+interface GigabitEthernet1/0/29
+!
+interface GigabitEthernet1/0/30
+!
+interface GigabitEthernet1/0/31
+!
+interface GigabitEthernet1/0/32
+!
+interface GigabitEthernet1/0/33
+!
+interface GigabitEthernet1/0/34
+!
+interface GigabitEthernet1/0/35
+!
+interface GigabitEthernet1/0/36
+!
+interface GigabitEthernet1/0/37
+!
+interface GigabitEthernet1/0/38
+!
+interface GigabitEthernet1/0/39
+!
+interface GigabitEthernet1/0/40
+!
+interface GigabitEthernet1/0/41
+!
+interface GigabitEthernet1/0/42
+!
+interface GigabitEthernet1/0/43
+!
+interface GigabitEthernet1/0/44
+!
+interface GigabitEthernet1/0/45
+!
+interface GigabitEthernet1/0/46
+!
+interface GigabitEthernet1/0/47
+!
+interface GigabitEthernet1/0/48
+!
+interface GigabitEthernet1/0/49
+!
+interface GigabitEthernet1/0/50
+!
+interface GigabitEthernet1/0/51
+!
+interface GigabitEthernet1/0/52
+!
+interface Vlan1
+ ip address 169.229.226.2 255.255.255.0
+!
+ip default-gateway 169.229.226.1
+no ip http server
+no ip http secure-server
+!
+banner login ^C
+NOTICE TO USERS
+---------------
+Welcome to blackhole. Hozers beware.
+
+This computer system is the private property of the Open Computing Facility. It
+is for authorized use only. Users (both authorized and unauthorized) have no
+explicit or implicit expectation of privacy.
+^C
+banner motd ^C
+Welcome to the Hearst Gym grotto. I am blackhole.
+^C
+!
+line con 0
+line vty 0 4
+! password <removed>
+line vty 5 15
+! password <removed>
+!
+ntp server 128.32.206.222
+end
