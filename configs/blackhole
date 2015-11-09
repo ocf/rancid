@@ -178,9 +178,9 @@ boot-start-marker
 boot-end-marker
 !
 logging console warnings
-enable secret 5 $1$pOeX$2j7BsXikXclZ3mBOMt34V1
+!enable secret <removed>
 !
-username admin privilege 15 secret 5 $1$A3n0$z.QqCDACHIenac/RDYp881
+!username admin privilege 15 secret <removed>
 aaa new-model
 !
 aaa authentication login default local
