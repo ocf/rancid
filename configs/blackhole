@@ -40,19 +40,19 @@
 !Variable:        via DHCP:       disabled (next boot: disabled)
 !
 !Flash: Directory of flash:/
-!Flash:   647  -rwx        3822  Mar 29 2011 19:43:42 -07:00  config.text
+!Flash:     2  -rwx        3820   Nov 8 2015 21:05:12 -08:00  config.text
+!Flash:   647  -rwx        1910   Nov 8 2015 21:05:12 -08:00  private-config.text
 !Flash:     5  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
-!Flash:   646  -rwx        1910  Mar 29 2011 19:43:42 -07:00  private-config.text
 !Flash: 57931776 bytes total (36144128 bytes free)
 !
 !Flash: nvram: Directory of nvram:/
-!Flash: nvram:   505  -rw-        3822                    <no date>  startup-config
+!Flash: nvram:   505  -rw-        3820                    <no date>  startup-config
 !Flash: nvram:   506  ----        1910                    <no date>  private-config
 !Flash: nvram:     1  ----          51                    <no date>  persistent-data
 !Flash: nvram:     2  -rw-           0                    <no date>  ifIndex-table
 !Flash: nvram:     3  -rw-         599                    <no date>  F3D5A000host#2E2E.cer
 !Flash: nvram:     4  -rw-         599                    <no date>  F3D5A000host#1.cer
-!Flash: nvram: 524288 bytes total (514408 bytes free)
+!Flash: nvram: 524288 bytes total (514410 bytes free)
 !
 !
 !NAME: "C29xx Stacking",        DESCR: "Catalyst C29xx Switch Stack"
