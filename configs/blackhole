@@ -40,19 +40,19 @@
 !Variable:        via DHCP:       disabled (next boot: disabled)
 !
 !Flash: Directory of flash:/
-!Flash:     2  -rwx        3820   Nov 8 2015 21:05:12 -08:00  config.text
-!Flash:   647  -rwx        1910   Nov 8 2015 21:05:12 -08:00  private-config.text
+!Flash:     2  -rwx        5108  Mar 29 2011 19:10:48 -07:00  config.text
+!Flash:   647  -rwx        1910  Mar 29 2011 19:10:49 -07:00  private-config.text
 !Flash:     5  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
-!Flash: 57931776 bytes total (36144128 bytes free)
+!Flash: 57931776 bytes total (36143104 bytes free)
 !
 !Flash: nvram: Directory of nvram:/
-!Flash: nvram:   505  -rw-        3820                    <no date>  startup-config
-!Flash: nvram:   506  ----        1910                    <no date>  private-config
+!Flash: nvram:   502  -rw-        5108                    <no date>  startup-config
+!Flash: nvram:   503  ----        1910                    <no date>  private-config
 !Flash: nvram:     1  ----          51                    <no date>  persistent-data
 !Flash: nvram:     2  -rw-           0                    <no date>  ifIndex-table
 !Flash: nvram:     3  -rw-         599                    <no date>  F3D5A000host#2E2E.cer
 !Flash: nvram:     4  -rw-         599                    <no date>  F3D5A000host#1.cer
-!Flash: nvram: 524288 bytes total (514410 bytes free)
+!Flash: nvram: 524288 bytes total (513122 bytes free)
 !
 !
 !NAME: "C29xx Stacking",        DESCR: "Catalyst C29xx Switch Stack"
@@ -131,40 +131,12 @@
 !VTP: Device ID                       : e8ed.f3d5.a000
 !VTP: Feature VLAN:
 !VTP: --------------
-!VTP: VTP Operating Mode                : Transparent
+!VTP: VTP Operating Mode                : Off
 !VTP: Maximum VLANs supported locally   : 255
 !VTP: Number of existing VLANs          : 7
 !VTP: Configuration Revision            : 0
-!VTP: MD5 digest                        : 0xE0 0x92 0x8A 0xC4 0xCB 0xFA 0xFF 0x61 
-!VTP:                                     0x40 0x72 0x9C 0x17 0xD8 0xE8 0xC9 0x5E 
-!
-!VLAN: VLAN Name                             Status    Ports
-!VLAN: ---- -------------------------------- --------- -------------------------------
-!VLAN: 1    default                          active    Gi1/0/49, Gi1/0/50, Gi1/0/51, Gi1/0/52
-!VLAN: 635  VLAN0635                         active    Gi1/0/1, Gi1/0/2, Gi1/0/3, Gi1/0/4, Gi1/0/6, Gi1/0/7, Gi1/0/8, Gi1/0/9, Gi1/0/10
-!VLAN:                                                 Gi1/0/11, Gi1/0/12, Gi1/0/13, Gi1/0/14, Gi1/0/15, Gi1/0/16, Gi1/0/17, Gi1/0/18
-!VLAN:                                                 Gi1/0/19, Gi1/0/20, Gi1/0/21, Gi1/0/22, Gi1/0/23, Gi1/0/24, Gi1/0/25, Gi1/0/26
-!VLAN:                                                 Gi1/0/27, Gi1/0/28, Gi1/0/29, Gi1/0/30, Gi1/0/31, Gi1/0/32, Gi1/0/33, Gi1/0/34
-!VLAN:                                                 Gi1/0/35, Gi1/0/36, Gi1/0/37, Gi1/0/38, Gi1/0/39, Gi1/0/40, Gi1/0/41, Gi1/0/42
-!VLAN:                                                 Gi1/0/43, Gi1/0/44, Gi1/0/45, Gi1/0/46, Gi1/0/47, Gi1/0/48
-!VLAN: 695  VLAN0695                         active    
-!VLAN: 1002 fddi-default                     act/unsup 
-!VLAN: 1003 token-ring-default               act/unsup 
-!VLAN: 1004 fddinet-default                  act/unsup 
-!VLAN: 1005 trnet-default                    act/unsup 
-!VLAN: VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
-!VLAN: ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
-!VLAN: 1    enet  100001     1500  -      -      -        -    -        0      0   
-!VLAN: 635  enet  100635     1500  -      -      -        -    -        0      0   
-!VLAN: 695  enet  100695     1500  -      -      -        -    -        0      0   
-!VLAN: 1002 fddi  101002     1500  -      -      -        -    -        0      0   
-!VLAN: 1003 tr    101003     1500  -      -      -        -    -        0      0   
-!VLAN: 1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
-!VLAN: 1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
-!VLAN: Remote SPAN VLANs
-!VLAN: ------------------------------------------------------------------------------
-!VLAN: Primary Secondary Type              Ports
-!VLAN: ------- --------- ----------------- ------------------------------------------
+!VTP: MD5 digest                        : 0x70 0xD5 0x28 0x3B 0x5A 0x8B 0x19 0x77 
+!VTP:                                     0x80 0x76 0x24 0xD0 0xB4 0x4C 0x51 0x96 
 !
 !
 config-register 0xF
@@ -174,7 +146,6 @@ no service pad
 no service timestamps debug uptime
 no service timestamps log uptime
 service password-encryption
-no service dhcp
 !
 hostname blackhole
 !
@@ -199,7 +170,7 @@ ip domain-name ocf.berkeley.edu
 ip name-server 128.32.206.12
 ip name-server 128.32.136.9
 ip device tracking
-vtp mode transparent
+vtp mode off
 !
 crypto pki trustpoint HTTPS_SS_CERT_KEYPAIR
  enrollment selfsigned
@@ -236,7 +207,10 @@ no spanning-tree vlan 1-4094
 !
 vlan internal allocation policy ascending
 !
-vlan 635,695 
+vlan 635
+ name ocf-mlk
+!
+vlan 695 
 !
 ip ssh logging events
 ip ssh version 2
@@ -261,8 +235,8 @@ interface GigabitEthernet1/0/4
  switchport mode access
 !
 interface GigabitEthernet1/0/5
- switchport trunk allowed vlan 635,695
- switchport mode trunk
+ switchport access vlan 635
+ switchport mode access
 !
 interface GigabitEthernet1/0/6
  switchport access vlan 635
@@ -397,40 +371,35 @@ interface GigabitEthernet1/0/38
  switchport mode access
 !
 interface GigabitEthernet1/0/39
- switchport access vlan 635
- switchport mode access
+ switchport mode trunk
 !
 interface GigabitEthernet1/0/40
  switchport access vlan 635
  switchport mode access
 !
 interface GigabitEthernet1/0/41
- switchport access vlan 635
+ switchport access vlan 695
  switchport mode access
 !
 interface GigabitEthernet1/0/42
- switchport access vlan 635
+ switchport access vlan 695
  switchport mode access
 !
 interface GigabitEthernet1/0/43
- switchport access vlan 635
+ switchport access vlan 695
  switchport mode access
 !
 interface GigabitEthernet1/0/44
- switchport access vlan 635
- switchport mode access
+ switchport mode trunk
 !
 interface GigabitEthernet1/0/45
- switchport access vlan 635
- switchport mode access
+ switchport mode trunk
 !
 interface GigabitEthernet1/0/46
- switchport access vlan 635
- switchport mode access
+ switchport mode trunk
 !
 interface GigabitEthernet1/0/47
- switchport access vlan 635
- switchport mode access
+ switchport mode trunk
 !
 interface GigabitEthernet1/0/48
  switchport access vlan 635
@@ -453,7 +422,6 @@ interface Vlan635
 interface Vlan695
  no ip address
 !
-ip default-gateway 169.229.226.1
 no ip http server
 no ip http secure-server
 !
