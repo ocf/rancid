@@ -41,8 +41,8 @@
 !
 !Flash: Directory of flash:/
 !Flash:     2  -rwx        1910   Apr 2 2011 00:22:36 -07:00  private-config.text
-!Flash:     4  -rwx        6266   Apr 2 2011 00:22:36 -07:00  config.text
-!Flash:     5  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
+!Flash:     5  -rwx        6266   Apr 2 2011 00:22:36 -07:00  config.text
+!Flash:     6  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
 !Flash: 57931776 bytes total (36141568 bytes free)
 !
 !Flash: nvram: Directory of nvram:/
