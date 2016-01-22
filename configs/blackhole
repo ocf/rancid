@@ -202,6 +202,8 @@ crypto pki certificate chain HTTPS_SS_CERT_KEYPAIR
   	quit
 !
 spanning-tree mode pvst
+spanning-tree portfast default
+spanning-tree portfast bpdufilter default
 spanning-tree extend system-id
 no spanning-tree vlan 1-4094
 !
