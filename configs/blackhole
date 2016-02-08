@@ -40,19 +40,19 @@
 !Variable:        via DHCP:       disabled (next boot: disabled)
 !
 !Flash: Directory of flash:/
-!Flash:     2  -rwx        1910   Apr 2 2011 00:22:36 -07:00  private-config.text
-!Flash:     5  -rwx        6266   Apr 2 2011 00:22:36 -07:00  config.text
+!Flash:     5  -rwx        1910  May 30 2011 21:52:06 -07:00  private-config.text
 !Flash:     6  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
-!Flash: 57931776 bytes total (36141568 bytes free)
+!Flash:   647  -rwx        8344  May 30 2011 21:52:06 -07:00  config.text
+!Flash: 57931776 bytes total (36139520 bytes free)
 !
 !Flash: nvram: Directory of nvram:/
-!Flash: nvram:   502  -rw-        6266                    <no date>  startup-config
-!Flash: nvram:   503  ----        1910                    <no date>  private-config
+!Flash: nvram:   500  -rw-        8344                    <no date>  startup-config
+!Flash: nvram:   501  ----        1910                    <no date>  private-config
 !Flash: nvram:     1  ----          51                    <no date>  persistent-data
 !Flash: nvram:     2  -rw-           0                    <no date>  ifIndex-table
 !Flash: nvram:     3  -rw-         599                    <no date>  F3D5A000host#2E2E.cer
 !Flash: nvram:     4  -rw-         599                    <no date>  F3D5A000host#1.cer
-!Flash: nvram: 524288 bytes total (511964 bytes free)
+!Flash: nvram: 524288 bytes total (509886 bytes free)
 !
 !
 !NAME: "C29xx Stacking",        DESCR: "Catalyst C29xx Switch Stack"
@@ -170,6 +170,8 @@ ip domain-name ocf.berkeley.edu
 ip name-server 128.32.206.12
 ip name-server 128.32.136.9
 ip device tracking
+ipv6 nd raguard policy block-all
+!
 vtp mode off
 !
 crypto pki trustpoint HTTPS_SS_CERT_KEYPAIR
@@ -223,190 +225,238 @@ interface FastEthernet0
 interface GigabitEthernet1/0/1
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/2
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/3
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/4
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/5
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/6
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/7
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/8
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/9
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/10
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/11
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/12
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/13
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/14
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/15
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/16
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/17
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/18
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/19
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/20
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/21
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/22
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/23
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/24
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/25
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/26
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/27
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/28
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/29
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/30
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/31
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/32
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/33
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/34
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/35
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/36
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/37
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/38
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/39
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/40
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/41
  switchport access vlan 695
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/42
  switchport access vlan 695
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/43
  switchport access vlan 695
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/44
  switchport mode trunk
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/45
  switchport mode trunk
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/46
  switchport mode trunk
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/47
  switchport mode trunk
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/48
  switchport access vlan 635
  switchport mode access
+ ipv6 nd raguard attach-policy block-all
 !
 interface GigabitEthernet1/0/49
 !
