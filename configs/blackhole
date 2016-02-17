@@ -479,22 +479,26 @@ interface GigabitEthernet1/0/43
  spanning-tree bpdufilter enable
 !
 interface GigabitEthernet1/0/44
- switchport mode trunk
+ switchport access vlan 635
+ switchport mode access
  ipv6 nd raguard attach-policy block-all
  spanning-tree bpdufilter enable
 !
 interface GigabitEthernet1/0/45
- switchport mode trunk
+ switchport access vlan 635
+ switchport mode access
  ipv6 nd raguard attach-policy block-all
  spanning-tree bpdufilter enable
 !
 interface GigabitEthernet1/0/46
- switchport mode trunk
+ switchport access vlan 635
+ switchport mode access
  ipv6 nd raguard attach-policy block-all
  spanning-tree bpdufilter enable
 !
 interface GigabitEthernet1/0/47
- switchport mode trunk
+ switchport access vlan 635
+ switchport mode access
  ipv6 nd raguard attach-policy block-all
  spanning-tree bpdufilter enable
 !
