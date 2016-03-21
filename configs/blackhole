@@ -40,19 +40,19 @@
 !Variable:        via DHCP:       disabled (next boot: disabled)
 !
 !Flash: Directory of flash:/
-!Flash:     4  -rwx        9855  May 30 2011 22:07:40 -07:00  config.text
+!Flash:     2  -rwx        9961  Jul 11 2011 18:57:03 -07:00  config.text
+!Flash:     4  -rwx        1910  Jul 11 2011 18:57:03 -07:00  private-config.text
 !Flash:     6  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
-!Flash:   647  -rwx        1910  May 30 2011 22:07:40 -07:00  private-config.text
 !Flash: 57931776 bytes total (36137984 bytes free)
 !
 !Flash: nvram: Directory of nvram:/
-!Flash: nvram:   500  -rw-        9855                    <no date>  startup-config
+!Flash: nvram:   500  -rw-        9961                    <no date>  startup-config
 !Flash: nvram:   501  ----        1910                    <no date>  private-config
 !Flash: nvram:     1  ----          51                    <no date>  persistent-data
 !Flash: nvram:     2  -rw-           0                    <no date>  ifIndex-table
 !Flash: nvram:     3  -rw-         599                    <no date>  F3D5A000host#2E2E.cer
 !Flash: nvram:     4  -rw-         599                    <no date>  F3D5A000host#1.cer
-!Flash: nvram: 524288 bytes total (508375 bytes free)
+!Flash: nvram: 524288 bytes total (508269 bytes free)
 !
 !
 !NAME: "C29xx Stacking",        DESCR: "Catalyst C29xx Switch Stack"
@@ -519,9 +519,7 @@ interface Vlan1
 !
 interface Vlan635
  ip address 169.229.226.2 255.255.255.0
-!
-interface Vlan695
- no ip address
+ ipv6 address 2607:F140:8801::1:2/64
 !
 no ip http server
 no ip http secure-server
