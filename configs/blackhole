@@ -133,10 +133,10 @@
 !VTP: --------------
 !VTP: VTP Operating Mode                : Off
 !VTP: Maximum VLANs supported locally   : 255
-!VTP: Number of existing VLANs          : 7
+!VTP: Number of existing VLANs          : 6
 !VTP: Configuration Revision            : 0
-!VTP: MD5 digest                        : 0x70 0xD5 0x28 0x3B 0x5A 0x8B 0x19 0x77 
-!VTP:                                     0x80 0x76 0x24 0xD0 0xB4 0x4C 0x51 0x96 
+!VTP: MD5 digest                        : 0x22 0xD9 0xD1 0x77 0xC7 0x62 0xA3 0xAA 
+!VTP:                                     0x59 0xC2 0x42 0x33 0x11 0x2E 0xCA 0xA0 
 !
 !
 config-register 0xF
@@ -211,8 +211,6 @@ vlan internal allocation policy ascending
 !
 vlan 635
  name ocf-mlk
-!
-vlan 695 
 !
 ip ssh logging events
 ip ssh version 2
