@@ -40,19 +40,19 @@
 !Variable:        via DHCP:       disabled (next boot: disabled)
 !
 !Flash: Directory of flash:/
-!Flash:     2  -rwx        1910  Apr 11 2011 23:11:12 -07:00  private-config.text
-!Flash:   647  -rwx        9945  Apr 11 2011 23:11:12 -07:00  config.text
+!Flash:   647  -rwx        1910  Apr 12 2011 04:31:53 -07:00  private-config.text
 !Flash:     5  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
+!Flash:   646  -rwx        9947  Apr 12 2011 04:31:53 -07:00  config.text
 !Flash: 57931776 bytes total (36137984 bytes free)
 !
 !Flash: nvram: Directory of nvram:/
-!Flash: nvram:   499  -rw-        9945                    <no date>  startup-config
+!Flash: nvram:   499  -rw-        9947                    <no date>  startup-config
 !Flash: nvram:   500  ----        1910                    <no date>  private-config
 !Flash: nvram:     1  ----          51                    <no date>  persistent-data
 !Flash: nvram:     2  -rw-           0                    <no date>  ifIndex-table
 !Flash: nvram:     3  -rw-         599                    <no date>  F3D5A000host#2E2E.cer
 !Flash: nvram:     4  -rw-         599                    <no date>  F3D5A000host#1.cer
-!Flash: nvram: 524288 bytes total (508285 bytes free)
+!Flash: nvram: 524288 bytes total (508283 bytes free)
 !
 !
 !NAME: "C29xx Stacking",        DESCR: "Catalyst C29xx Switch Stack"
@@ -533,7 +533,9 @@ This computer system is the private property of the Open Computing Facility. It
 is for authorized use only. Users (both authorized and unauthorized) have no
 explicit or implicit expectation of privacy.
 ^C
-banner motd ^CWelcome to 171 MLK. I am blackhole.^C
+banner motd ^C
+Welcome to 171 MLK. I am blackhole.
+^C
 !
 line con 0
 line vty 0 4
