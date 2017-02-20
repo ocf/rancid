@@ -401,6 +401,9 @@ interface GigabitEthernet1/0/30
 interface GigabitEthernet1/0/31
  switchport access vlan 635
  switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ ip device tracking maximum 10
  ipv6 nd raguard attach-policy block-all
  spanning-tree bpdufilter enable
 !
