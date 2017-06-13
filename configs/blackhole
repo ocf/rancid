@@ -40,7 +40,7 @@
 !Variable:        via DHCP:       disabled (next boot: disabled)
 !
 !Flash: Directory of flash:/
-!Flash:   647  -rwx        9945   Jan 2 2017 17:13:13 -08:00  config.text
+!Flash:     3  -rwx        9945   Jan 2 2017 17:13:13 -08:00  config.text
 !Flash:     5  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
 !Flash:   646  -rwx        1910   Jan 2 2017 17:13:13 -08:00  private-config.text
 !Flash: 57931776 bytes total (36137984 bytes free)
@@ -401,12 +401,8 @@ interface GigabitEthernet1/0/30
 interface GigabitEthernet1/0/31
  switchport access vlan 635
  switchport mode access
- switchport port-security maximum 10
- switchport port-security
- ip device tracking maximum 10
  ipv6 nd raguard attach-policy block-all
  spanning-tree bpdufilter enable
- ip verify source
 !
 interface GigabitEthernet1/0/32
  switchport access vlan 635
