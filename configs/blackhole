@@ -1,6 +1,6 @@
 !RANCID-CONTENT-TYPE: cisco
 !
-!Chassis type: WS-C2960S-48TS-L - a 2900XL switch
+!Chassis type: WS-C2960S-48TS-L
 !CPU: PowerPC
 !
 !Memory: main 131072K
@@ -15,6 +15,7 @@
 !
 !Processor ID: FOC1733V3VC
 !
+!FAN: FAN is OK
 !
 !Image: Software: C2960S-UNIVERSALK9-M, 15.2(1)E1, RELEASE SOFTWARE (fc2)
 !Image: Compiled: Fri 22-Nov-13 07:10 by prod_rel_team
@@ -39,7 +40,17 @@
 !Variable: Config Download 
 !Variable:        via DHCP:       disabled (next boot: disabled)
 !
+! Index 1 Feature: lanlite        
+! 	Period left: <limited>
+! Index 2 Feature: lanbase        
+! 	Period left: Life time
+! 	License Type: Permanent
+! 	License State: Active, In Use
+! 	License Priority: Medium
+! 	License Count: Non-Counted
+!
 !Flash: Directory of flash:/
+!Flash:        -rwx                                           vlan.dat
 !Flash:     3  -rwx        9945   Jan 2 2017 17:13:13 -08:00  config.text
 !Flash:     5  drwx         512   Mar 8 2014 22:17:32 -08:00  c2960s-universalk9-mz.152-1.E1
 !Flash:   646  -rwx        1910   Jan 2 2017 17:13:13 -08:00  private-config.text
@@ -52,7 +63,7 @@
 !Flash: nvram:     2  -rw-           0                    <no date>  ifIndex-table
 !Flash: nvram:     3  -rw-         599                    <no date>  F3D5A000host#2E2E.cer
 !Flash: nvram:     4  -rw-         599                    <no date>  F3D5A000host#1.cer
-!Flash: nvram: 524288 bytes total (508285 bytes free)
+!Flash: nvram: 524288 bytes total (496 KB free)
 !
 !
 !NAME: "C29xx Stacking",        DESCR: "Catalyst C29xx Switch Stack"
@@ -137,6 +148,48 @@
 !VTP: Configuration Revision            : 0
 !VTP: MD5 digest                        : 0xEE 0x0A 0xC5 0x8E 0x0B 0xF2 0x4E 0xCF 
 !VTP:                                     0x86 0x1F 0xC9 0x4B 0xF8 0x91 0xF3 0x6E 
+!
+!VLAN: VLAN Name                             Status    Ports
+!VLAN: ---- -------------------------------- --------- -------------------------------
+!VLAN: 1    default                          active    Gi1/0/49, Gi1/0/50, Gi1/0/51, Gi1/0/52
+!VLAN: 635  ocf-mlk                          active    Gi1/0/1, Gi1/0/2, Gi1/0/3, Gi1/0/4, Gi1/0/5, Gi1/0/6, Gi1/0/7, Gi1/0/8, Gi1/0/9
+!VLAN:                                                 Gi1/0/10, Gi1/0/11, Gi1/0/12, Gi1/0/13, Gi1/0/14, Gi1/0/15, Gi1/0/16, Gi1/0/17
+!VLAN:                                                 Gi1/0/18, Gi1/0/19, Gi1/0/20, Gi1/0/21, Gi1/0/22, Gi1/0/23, Gi1/0/24, Gi1/0/25
+!VLAN:                                                 Gi1/0/26, Gi1/0/27, Gi1/0/28, Gi1/0/29, Gi1/0/30, Gi1/0/31, Gi1/0/32, Gi1/0/33
+!VLAN:                                                 Gi1/0/34, Gi1/0/35, Gi1/0/36, Gi1/0/37, Gi1/0/38, Gi1/0/39, Gi1/0/40, Gi1/0/44
+!VLAN:                                                 Gi1/0/45, Gi1/0/46, Gi1/0/47, Gi1/0/48
+!VLAN: 1002 fddi-default                     act/unsup 
+!VLAN: 1003 token-ring-default               act/unsup 
+!VLAN: 1004 fddinet-default                  act/unsup 
+!VLAN: 1005 trnet-default                    act/unsup 
+!VLAN: VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+!VLAN: ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+!VLAN: 1    enet  100001     1500  -      -      -        -    -        0      0   
+!VLAN: 635  enet  100635     1500  -      -      -        -    -        0      0   
+!VLAN: 1002 fddi  101002     1500  -      -      -        -    -        0      0   
+!VLAN: 1003 tr    101003     1500  -      -      -        -    -        0      0   
+!VLAN: 1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+!VLAN: 1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+!VLAN: Remote SPAN VLANs
+!VLAN: ------------------------------------------------------------------------------
+!VLAN: Primary Secondary Type              Ports
+!VLAN: ------- --------- ----------------- ------------------------------------------
+!
+!STACK: Switch/Stack Mac Address : e8ed.f3d5.a000
+!STACK:                                            H/W   Current
+!STACK: Switch#  Role   Mac Address     Priority Version  State 
+!STACK: ----------------------------------------------------------
+!STACK: *1       Master e8ed.f3d5.a000     1      1       Ready               
+!STACK:          Stack Port Status             Neighbors     
+!STACK: Switch#  Port 1     Port 2           Port 1   Port 2 
+!STACK: --------------------------------------------------------
+!STACK:   1       Down       Down             None     None
+!
+!SDM Template: default
+!
+!MTU: 1500
+!MTU-Jumbo: 1500
+!MTU-Routing: 1500
 !
 !
 config-register 0xF
@@ -544,4 +597,5 @@ line vty 5 15
 ! password <removed>
 !
 ntp server 169.229.226.10
+ntp server 169.229.226.12
 end
